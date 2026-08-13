@@ -1,0 +1,61 @@
+name: Notebook repository validation
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: notebook-validation-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+
+      - name: Validate Jupyter notebook JSON
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          notebooks = sorted(Path(".").rglob("*.ipynb"))
+          if not notebooks:
+              raise SystemExit("No Jupyter notebooks found.")
+
+          for path in notebooks:
+              with path.open("r", encoding="utf-8") as handle:
+                  json.load(handle)
+              print(f"validated {path}")
+          PY
+
+      - name: Reject obvious committed API keys
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -R -n -E \
+            --exclude-dir=.git \
+            'sk-[A-Za-z0-9_-]{20,}' .; then
+            echo "Potential API key detected."
+            exit 1
+          fi
