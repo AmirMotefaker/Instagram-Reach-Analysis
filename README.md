@@ -1,9 +1,67 @@
 # Instagram Reach Analysis
-- Instagram is one of the most popular social media applications today. People using Instagram professionally are using it for promoting their business, building a portfolio, blogging, and creating various kinds of content. 
 
-# Introduction
-- Instagram is one of the most popular social media applications today. People using Instagram professionally are using it for promoting their business, building a portfolio, blogging, and creating various kinds of content. As Instagram is a popular application used by millions of people with different niches, Instagram keeps changing to make itself better for content creators and users. But as this keeps changing, it affects the reach of our posts, which affects us in the long run. So if a content creator wants to do well on Instagram in the long run, they have to look at the data of their Instagram reach. That is where the use of Data Science in social media comes in.
+[![GitHub stars](https://img.shields.io/github/stars/AmirMotefaker/Instagram-Reach-Analysis?style=flat&logo=github)](https://github.com/AmirMotefaker/Instagram-Reach-Analysis/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/AmirMotefaker/Instagram-Reach-Analysis?style=flat&logo=github)](https://github.com/AmirMotefaker/Instagram-Reach-Analysis/network/members)
+[![Python](https://img.shields.io/badge/Python-Data%20Analysis-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
 
-- I have been researching Instagram reach for a long time. Every time I post on my Instagram account, I collect data about how successful the post is after a week. This helps me understand how the Instagram algorithm works. If you want to analyze the reach of your Instagram account, you have to collect your data manually because there are some APIs, but they don't work well. Therefore, it is better to collect your Instagram data manually.
+A practical Python/Jupyter project for exploring Instagram reach, engagement, traffic sources, captions, and hashtags.
 
-- If you want to learn how to analyze Instagram reach using Python, you can use the data I collected from my Instagram account. You can download the dataset I used to analyze Instagram reach here.
+## Project snapshot
+
+The notebook works with a dataset containing **119 rows and 13 columns**. The observed fields include:
+
+- Impressions
+- From Home
+- From Hashtags
+- From Explore
+- From Other
+- Saves
+- Comments
+- Shares
+- Likes
+- Profile Visits
+- Follows
+- Caption
+- Hashtags
+
+The project uses Python data-analysis and visualization tooling to explore how reach and engagement signals relate to Instagram content performance.
+
+## Open the analysis
+
+- **GitHub Notebook:** [`instagram-reach-analysis.ipynb`](instagram-reach-analysis.ipynb)
+- **Kaggle Notebook:** [Open on Kaggle](https://www.kaggle.com/code/amirmotefaker/instagram-reach-analysis)
+- **Dataset source referenced by the notebook:** [Instagram data archive](https://statso.io/wp-content/uploads/2022/10/archive.zip)
+
+## Analysis workflow
+
+1. Load the Instagram dataset with pandas.
+2. Inspect data quality and column types.
+3. Explore impression sources such as Home, Hashtags, and Explore.
+4. Compare engagement signals such as Saves, Comments, Shares, Likes, Profile Visits, and Follows.
+5. Explore text fields including captions and hashtags.
+6. Visualize patterns using Python plotting libraries.
+
+## Tech stack
+
+`Python` · `Pandas` · `NumPy` · `Matplotlib` · `Plotly` · `Jupyter Notebook`
+
+The notebook also imports additional analysis/visualization libraries for experimentation.
+
+## Run locally
+
+```bash
+git clone https://github.com/AmirMotefaker/Instagram-Reach-Analysis.git
+cd Instagram-Reach-Analysis
+jupyter notebook
+```
+
+Open `instagram-reach-analysis.ipynb` and point the data-loading cell to your local dataset path if needed.
+
+## Why star this repository?
+
+If you are learning data analysis, social-media analytics, or exploratory Python workflows, a ⭐ helps other learners find the project and signals that this type of practical analysis is useful.
+
+## Author
+
+**Amir Motefaker** — [GitHub](https://github.com/AmirMotefaker) · [Kaggle](https://www.kaggle.com/amirmotefaker) · [Website](https://amirmotefaker.ir)
