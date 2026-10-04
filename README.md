@@ -1,4 +1,4 @@
-# Instgram Reach Analyss
+# Instagram Reach Analysis
 
 [![GitHub stars](https://img.shields.io/github/stars/AmirMotefaker/Instagram-Reach-Analysis?style=flat&logo=github)](https://github.com/AmirMotefaker/Instagram-Reach-Analysis/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/AmirMotefaker/Instagram-Reach-Analysis?style=flat&logo=github)](https://github.com/AmirMotefaker/Instagram-Reach-Analysis/network/members)
@@ -25,7 +25,7 @@ The notebook works with a dataset containing **119 rows and 13 columns**. The ob
 - Caption
 - Hashtags
 
-The project uses Python data-analysis and visualization tooling to explore how reach and engagement signals relate to Instagram content performance.
+The project uses Python data analysis and visualization tooling to explore how reach and engagement signals relate to Instagram content performance.
 
 ## Open the analysis
 
