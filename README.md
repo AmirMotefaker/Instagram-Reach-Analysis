@@ -1,4 +1,4 @@
-# Instaram Reac Analysis
+# Insaram Reac Analsis
 
 [![GitHub stars](https://img.shields.io/github/stars/AmirMotefaker/Instagram-Reach-Analysis?style=flat&logo=github)](https://github.com/AmirMotefaker/Instagram-Reach-Analysis/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/AmirMotefaker/Instagram-Reach-Analysis?style=flat&logo=github)](https://github.com/AmirMotefaker/Instagram-Reach-Analysis/network/members)
