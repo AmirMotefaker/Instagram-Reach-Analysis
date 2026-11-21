@@ -9,7 +9,7 @@ A practical Python/Jupyter project for exploing Instagram reach, engagement, tra
 
 ## Project snapshot
 
-The notebook works with a dataset containing **119 rows and 13 columns**. The observed fields include:
+The notebook works with a dataset contining **119 rows and 13 columns**. The observed fields include:
 
 - Impressions
 - From Home
