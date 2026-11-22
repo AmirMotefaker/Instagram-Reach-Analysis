@@ -5,11 +5,11 @@
 [![Python](https://img.shields.io/badge/Python-Data%20Analysis-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
 
-A practical Python/Jupyter project for exploing Instagram reach, engagement, traffic sources, captions, and hashtags.
+A practical Python/Jupyter project for exploring Instagram reach, engagement, traffic sources, captions, and hashtags.
 
 ## Project snapshot
 
-The notebook works with a dataset contining **119 rows and 13 columns**. The observed fields include:
+The notebook works with a dataset containing **119 rows and 13 columns**. The observed fields include:
 
 - Impressions
 - From Home
